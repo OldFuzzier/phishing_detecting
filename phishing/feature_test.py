@@ -4,12 +4,7 @@
 import re
 import urlparse
 import jieba
-
-
-def split_url(url):
-    return urlparse.urlparse(url)
-
-pattern = re.compile(r'//')
+import features
 
 
 url = "http://www.luxinnerwear.com/javascript_gallery/alibaba/alibaba/login.alibaba.com.php?email=abuse@madecenter.com"
@@ -25,24 +20,4 @@ url10 = "http://3designcenter.com/blog/wp-admin/network/other/index.html?.rand&a
 url11 = "http://shop.dominion.dn.ua/templates/redirect/smiles_motivo_para_sorrir_/?https://www.smiles.com.br/promocoes/redireciona/cadastrar/novapromocao/"
 string = 'ilikefacebookyouknow'
 
-
-#print '$'.join(jieba.cut(string))
-url_split = urlparse.urlparse(url11)
-#print url11
-#print pattern.findall(url11)
-#print url_split.path
-
-
-def get_url_query_symbol_2(url):
-    url_piece = split_url(url)
-    symbols = ['@', '\?', '\.']
-    query = url_piece.query
-    reg = ''
-    for i in symbols:
-        reg += '|'+i
-    print reg[1:]
-    pattern2 = re.compile('@|&|%|\.')
-    print len(pattern2.findall(query))
-
-#pattern = re.compile('[@&%\.]')
-#print pattern.findall('afa&k@gjl.ajgkla')
+print features.get_url_query_symbol_2(url3)
