@@ -1,13 +1,23 @@
 #!/usr/bin/env python
 # coding:utf-8
 
-import re
-import urlparse
-import jieba
 import features
 
+features_lst_local = [
+    'get_url_domain_symbol_1',
+    'get_url_query_symbol_2',
+    'get_url_path_symbol_3',
+    'get_url_length',
+    'get_url_domain_length',
+    'get_url_domain_level_length',
+    'get_url_path_level_length',
+    'get_url_domain_is_ip_type',
+    'get_url_domain_brand',
+    'get_url_path_brand',
+    'get_tiny_domain'
+]
 
-url = "http://www.luxinnerwear.com/javascript_gallery/alibaba/alibaba/login.alibaba.com.php?email=abuse@madecenter.com"
+url1 = "http://www.luxinnerwear.com/javascript_gallery/alibaba/alibaba/login.alibaba.com.php?email=abuse@madecenter.com"
 url2 = "http://www.Confirme-paypal.com/"
 url3 = "http://www.mmch.co.in/font/index2.html?email=abuse@sfc-ksa.com"
 url4 = "http://xxxxx/abc?name=admin&password=admin"
@@ -20,4 +30,25 @@ url10 = "http://3designcenter.com/blog/wp-admin/network/other/index.html?.rand&a
 url11 = "http://shop.dominion.dn.ua/templates/redirect/smiles_motivo_para_sorrir_/?https://www.smiles.com.br/promocoes/redireciona/cadastrar/novapromocao/"
 string = 'ilikefacebookyouknow'
 
-print features.get_url_query_symbol_2(url3)
+'''
+fc = features.FeatureClassify()
+
+fc_funcs_lst = map(lambda x: eval('fc.'+x), [i for i in features_lst_local])
+
+
+def get_feature(url):
+    return map(lambda x: x(url), fc_funcs_lst)
+
+
+for i in map(lambda x: eval('url'+str(x)), range(1, 12)):
+    print get_feature(i)
+
+
+with open('test_urls.txt', 'rb') as f:
+    urls = f.readlines()
+    urls_strip = map(lambda x: x.strip(), urls)
+
+with open('test_url_result.txt', 'wb') as f:
+    for url in urls_strip:
+        f.write(str(get_feature(url)) + '\r\n')
+'''
