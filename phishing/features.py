@@ -17,7 +17,8 @@ features_lst = [
     'get_url_path_brand',
     'get_url_top_domain_site_error(give up)',
     'get_domain_top_in_path(give up)',
-    'get_tiny_domain'
+    'get_tiny_domain',
+    'get_special_character'
 ]
 
 #NORMAL_BRANDS = get_txt123('phishing_brands.txt')
@@ -31,6 +32,7 @@ class FeatureClassify(object):
 
     def __init__(self):
         self.NORMAL_BRANDS = self.get_txt('phishing_brands.txt')
+        self.SPECIAL_CHARACTER = ['confirm', 'account', 'banking', 'secure', 'ebayisapi', 'webscr', 'login', 'sigin']
 
     def get_txt(self, name):
         with open(name, 'rb') as f:
@@ -162,5 +164,12 @@ class FeatureClassify(object):
         point = 7
         if len(url_piece.netloc) <= point:
             return 1
+        else:
+            return 0
+
+    def get_special_character(self, url):
+        for character in self.SPECIAL_CHARACTER:
+            if url.find(character):
+                return 1
         else:
             return 0

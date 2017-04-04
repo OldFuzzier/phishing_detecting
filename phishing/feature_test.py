@@ -14,7 +14,8 @@ features_lst_local = [
     'get_url_domain_is_ip_type',
     'get_url_domain_brand',
     'get_url_path_brand',
-    'get_tiny_domain'
+    'get_tiny_domain',
+    'get_special_character'
 ]
 
 url1 = "http://www.luxinnerwear.com/javascript_gallery/alibaba/alibaba/login.alibaba.com.php?email=abuse@madecenter.com"
@@ -28,27 +29,20 @@ url8 = "http://www.legitimate.com//http://www.phishing.com"
 url9 = "http://www.cclpgms.com/js/?_Acess_Tooken&amp;Acirc;????????????????????????????????792e070ef1e2a9747e63dd241bb32a87792e070ef1e2a9747e63dd241bb32a"
 url10 = "http://3designcenter.com/blog/wp-admin/network/other/index.html?.rand&amp;us.battle.net/login/en"
 url11 = "http://shop.dominion.dn.ua/templates/redirect/smiles_motivo_para_sorrir_/?https://www.smiles.com.br/promocoes/redireciona/cadastrar/novapromocao/"
-string = 'ilikefacebookyouknow'
 
-'''
+
 fc = features.FeatureClassify()
 
 fc_funcs_lst = map(lambda x: eval('fc.'+x), [i for i in features_lst_local])
 
 
-def get_feature(url):
+def set_feature(url):
     return map(lambda x: x(url), fc_funcs_lst)
 
 
-for i in map(lambda x: eval('url'+str(x)), range(1, 12)):
-    print get_feature(i)
+def prefix_url():
+    with open('test_urls.txt', 'rb') as f:
+        urls = f.readlines()
+        urls_strip = map(lambda x: x.strip(), urls)
+    return urls_strip
 
-
-with open('test_urls.txt', 'rb') as f:
-    urls = f.readlines()
-    urls_strip = map(lambda x: x.strip(), urls)
-
-with open('test_url_result.txt', 'wb') as f:
-    for url in urls_strip:
-        f.write(str(get_feature(url)) + '\r\n')
-'''
