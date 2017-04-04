@@ -1,0 +1,38 @@
+分类
+Part 1: Classification
+1 Machine learning basics
+2 Classifying with k-nearest neighbors
+3 Splitting datasets one feature at a time: decision trees
+4 Classifying with probability distributions: Native Bayes
+5 Logistic regression
+6 Support vector machines
+
+
+知乎上解释钓鱼网站
+https://www.zhihu.com/question/35424623
+
+freebuf上的基于贝叶斯的钓鱼网站识别
+http://www.freebuf.com/articles/web/104870.html
+
+独秀
+http://www.duxiu.com/
+
+超星发现
+http://www.zhizhen.com/
+
+sklearn的使用实例
+http://lvraikkonen.github.io/2015/08/07/2015-08-07-naive-bayes-classifier/
+
+sklearn中贝叶斯的三种算法的比较http://www.cnblogs.com/pinard/p/6074222.html
+
+钓鱼网站资源 和 提取特征值方式
+https://archive.ics.uci.edu/ml/machine-learning-databases/00327/
+
+钓鱼网站数据
+https://www.phishtank.com/
+
+tf-idf解释（很好）
+http://www.ruanyifeng.com/blog/2013/03/tf-idf.html
+
+sklearn简单导航
+http://blog.csdn.net/pipisorry/article/details/52251305
