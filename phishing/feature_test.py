@@ -45,4 +45,3 @@ def prefix_url():
         urls = f.readlines()
         urls_strip = map(lambda x: x.strip(), urls)
     return urls_strip
-
