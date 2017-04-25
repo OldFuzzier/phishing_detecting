@@ -169,7 +169,7 @@ class FeatureClassify(object):
 
     def get_special_character(self, url):
         for character in self.SPECIAL_CHARACTER:
-            if url.find(character):
+            if url.find(character) != -1:
                 return 1
         else:
             return 0
