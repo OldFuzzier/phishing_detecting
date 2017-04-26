@@ -36,3 +36,10 @@ http://www.ruanyifeng.com/blog/2013/03/tf-idf.html
 
 sklearn简单导航
 http://blog.csdn.net/pipisorry/article/details/52251305
+
+python第三模块安装镜像
+https://pypi.tuna.tsinghua.edu.cn/simple
+
+tfidf特征值提取方法
+http://blog.csdn.net/github_36326955/article/details/54912020
+
