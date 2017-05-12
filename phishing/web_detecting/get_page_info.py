@@ -33,18 +33,19 @@ and they lived at the bottom of a well.</p>
 
 class WebPageFeature(object):
 
-    def __init__(self, url):
-        self.url = url
+    def __init__(self, lst):
+        self.url_lst = lst
 
-    def get_html(self):
+    def get_html(self, url):
         try:
             headers = {'User_Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) '
                                      'AppleWebKit/537.36 (KHTML, like Gecko) '
                                      'Chrome/30.0.1581.2 Safari/537.36'}
-            text = requests.get(self.url, headers=headers).text
+            text = requests.get(url, headers=headers).text
+            print url+' request suecess'
             return text
         except:
-            print self.url+' request have error!'
+            print url+' request have error!'
             return 0
 
     def parser_html(self, html):
@@ -55,9 +56,10 @@ class WebPageFeature(object):
                 self.clear_tag(soup, 'script')
                 self.clear_tag(soup, 'style')
                 vector = [string for string in soup.stripped_strings if self.match_chinese(string)]
-                with open('web_page_features3.txt', 'wb') as f:
+                with open('web_page_features_all.txt', 'ab') as f:
                     for i in vector:
                         f.write(i.encode('utf-8')+'\r\n')
+                    f.write('-'*40+'\r\n')
             except:
                 print 'parrser html have error!'
 
@@ -76,13 +78,16 @@ class WebPageFeature(object):
         pass
 
     def main(self):
-        html = self.get_html()
-        if html:
-            self.parser_html(html)
+        for url in self.url_lst:
+            html = self.get_html(url)
+            if html:
+                self.parser_html(html)
+        return
 
 
 if __name__ == '__main__':
-    wpf = WebPageFeature(URL)
+    wpf = WebPageFeature([URL, URL2])
+    wpf.main()
 
 
 
