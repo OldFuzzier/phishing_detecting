@@ -1,4 +1,4 @@
-·ÖÀà
+ï»¿åˆ†ç±»
 Part 1: Classification
 1 Machine learning basics
 2 Classifying with k-nearest neighbors
@@ -8,38 +8,40 @@ Part 1: Classification
 6 Support vector machines
 
 
-ÖªºõÉÏ½âÊÍµöÓãÍøÕ¾
+çŸ¥ä¹ä¸Šè§£é‡Šé’“ç½‘ç«™
 https://www.zhihu.com/question/35424623
 
-freebufÉÏµÄ»ùÓÚ±´Ò¶Ë¹µÄµöÓãÍøÕ¾Ê¶±ğ
+freebufä¸Šçš„åŸºäºè´å¶æ–¯çš„é’“é±¼ç½‘ç«™è¯†åˆ«
 http://www.freebuf.com/articles/web/104870.html
 
-¶ÀĞã
+ç‹¬ç§€
 http://www.duxiu.com/
 
-³¬ĞÇ·¢ÏÖ
+è¶…æ˜Ÿå‘ç°
 http://www.zhizhen.com/
 
-sklearnµÄÊ¹ÓÃÊµÀı
+sklearnçš„ä½¿ç”¨å®ä¾‹
 http://lvraikkonen.github.io/2015/08/07/2015-08-07-naive-bayes-classifier/
 
-sklearnÖĞ±´Ò¶Ë¹µÄÈıÖÖËã·¨µÄ±È½Ïhttp://www.cnblogs.com/pinard/p/6074222.html
+sklearnä¸­è´å¶æ–¯çš„ä¸‰ç§ç®—æ³•çš„æ¯”è¾ƒhttp://www.cnblogs.com/pinard/p/6074222.html
 
-µöÓãÍøÕ¾×ÊÔ´ ºÍ ÌáÈ¡ÌØÕ÷Öµ·½Ê½
+é’“é±¼ç½‘ç«™èµ„æº å’Œ æå–ç‰¹å¾å€¼æ–¹å¼
 https://archive.ics.uci.edu/ml/machine-learning-databases/00327/
 
-µöÓãÍøÕ¾Êı¾İ
+é’“é±¼ç½‘ç«™æ•°æ®
 https://www.phishtank.com/
 
-tf-idf½âÊÍ£¨ºÜºÃ£©
+tf-idfè§£é‡Šï¼ˆå¾ˆå¥½ï¼‰
 http://www.ruanyifeng.com/blog/2013/03/tf-idf.html
 
-sklearn¼òµ¥µ¼º½
+sklearnç®€å•å¯¼èˆª
 http://blog.csdn.net/pipisorry/article/details/52251305
 
-pythonµÚÈıÄ£¿é°²×°¾µÏñ
+pythonç¬¬ä¸‰æ¨¡å—å®‰è£…é•œåƒ
 https://pypi.tuna.tsinghua.edu.cn/simple
 
-tfidfÌØÕ÷ÖµÌáÈ¡·½·¨
+tfidfç‰¹å¾å€¼æå–æ–¹æ³•
 http://blog.csdn.net/github_36326955/article/details/54912020
 
+freebuf HMMç®€ä»‹
+http://www.freebuf.com/author/%E5%85%9C%E5%93%A5?page=1

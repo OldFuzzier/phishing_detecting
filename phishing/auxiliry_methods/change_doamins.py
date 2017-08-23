@@ -9,7 +9,7 @@ def get_domain():
 
 
 def change(lst):
-    return filter(lambda  x: len(x) == 3, lst)
+    return filter(lambda x: len(x) == 3, lst)
 
 
 def save_doamain(lst):
@@ -18,7 +18,8 @@ def save_doamain(lst):
             f.write(i + '\r\n')
     return
 
-if __name__ == '__main__':
+
+def test():
     lst = get_domain()
     new_lst = change(lst)
     print new_lst

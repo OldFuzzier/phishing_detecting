@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # coding:utf-8
 
+
 def get_brands():
     with open('brands.txt', 'rb') as f:
         lst = f.readlines()
@@ -27,7 +28,7 @@ def change_lst(lst):
     return lst_new
 
 
-if __name__ == '__main__':
+def test():
     lst = get_brands()
     new_lst = change_lst(lst)
     save_brands(new_lst)
