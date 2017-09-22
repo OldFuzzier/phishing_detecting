@@ -3,25 +3,26 @@
 
 import nltk
 from nltk.corpus import stopwords
+from nltk.stem.lancaster import LancasterStemmer
 
 from db_process import MyProcess
 
 
 def segment_word(sent):
+    ls = LancasterStemmer()
     english_punctuations = [',', '.', ':', ';', '?', '(', ')', '[', ']', '&', '!', '*', '@', '#', '$', '%', '\'']
     words = nltk.word_tokenize(sent)
     filter_words = filter(lambda x: x not in english_punctuations and x not in stopwords.words('english'), words)
-    return filter_words
+    stem_words = map(lambda x: ls(x), filter_words)  # 提取词干
+    return stem_words
 
 
-def data_prepare():
+def save_pageword():
     mp = MyProcess()
     sents_phishing = mp.get_sent()
     for sents_tuple in sents_phishing:
         words_lst = []  # 全部sent总体的list
-        url = sents_tuple[0]
-        sents_string = sents_tuple[1]
-        class_ = sents_tuple[2]
+        url, sents_string, class_ = sents_tuple[0], sents_tuple[1], sents_tuple[2]
         sents_lst = sents_string.split('   ')  # 从数据库取出的是tuple形式
         for sent in sents_lst:
             words = segment_word(sent)
