@@ -3,6 +3,7 @@
 
 import requests
 import re
+import time
 
 
 def get_rank(search_url):
@@ -13,6 +14,7 @@ def get_rank(search_url):
                'Accept-Language': 'zh-CN,zh;q=0.8',
                'Upgrade-Insecure-Requests': '1'
                }
+    proxy = {'http'}
     try:
         xml = requests.get(url, headers=headers).text
         return re.compile(r'<REACH RANK="\d+"/>').search(xml).group()
@@ -20,4 +22,8 @@ def get_rank(search_url):
         print 'There are not Rank.'
         return
 
-print get_rank('www.baidu.com')
+t1 = time.time()
+print get_rank('wwfa.game.tete.baidu.com')
+t2 = time.time()
+
+print t2 - t1

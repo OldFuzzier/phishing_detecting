@@ -5,7 +5,7 @@ import Queue
 import time
 from threading import Thread
 
-import urlfeature_util as ft
+from url_feature_util import SetFeature
 
 que_phishing = Queue.Queue(maxsize=5000)
 que_normal = Queue.Queue(maxsize=5000)
@@ -31,7 +31,7 @@ def task_process(q, flag):
                 print 'Queue has nothing'
             else:
                 url = q.get()
-                l = ft.set_feature(url)
+                l = SetFeature(url).set_feature()
                 l.append(flag)
                 que_total.put(l)
                 q.task_done()
@@ -65,7 +65,6 @@ def task_consumer(q):
 def multi_consumer(q, task, jobs):
     for i in range(1, jobs+1):
         task_i = Thread(target=task, args=(q, ))
-        task_i.setDaemon(True)
         task_i.start()
 
 

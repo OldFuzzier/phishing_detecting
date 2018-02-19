@@ -1,0 +1,94 @@
+Other 22879 其他
+PayPal 858 第三方支付
+Facebook 548 脸书
+Dropbox 247  在线存储服务
+Microsoft 204 微软
+Google 166 谷歌
+AOL 128 美国电子通讯
+United Services Automobile Association 60  美国金融服务
+Apple 55 苹果公司
+Internal Revenue Service 51  美国税务局
+JPMorgan Chase and Co. 50 摩根大通
+Yahoo 49 雅虎
+Capitec Bank 40 银行
+Santander UK 40 银行
+Adobe 38 adobe软件公司
+Banco De Brasil 33 巴西银行（其他语种）
+Bank of America Corporation 32  美国银行
+DHL 29 DHL运输公司
+eBay, Inc. 28 ebay电商
+Bradesco 24 巴西银行（其他语种）
+Wells Fargo 22 美国富国银行
+Itau 18 巴西银行（其他语种）
+Orkut 18 社会网络服务社交
+Amazon.com 16 亚马逊
+NatWest Bank 14 爱尔兰银行
+Barclays Bank PLC 13 英国银行
+ASB Bank Limited 13 新西兰银行
+Allegro 13 游戏
+Netflix 13 网络视频点播
+WhatsApp 12 及时通信
+WalMart 12 沃尔玛
+Alibaba.com 11 阿里巴巴
+Cielo 11  巴西银行（其他语种）
+American Express 10 美国运通 金融类
+Capital One 10 第一资本 金融类
+Steam 10 steam游戏平台
+Her Majesty's Revenue and Customs 10 英国税务海关总署
+National Australia Bank 8 澳大利亚银行
+Poste Italiane 8 意大利邮政（运输类）
+Sulake Corporation 7  游戏公司
+Visa 6 visa金融
+HSBC Group 5 汇丰银行
+First National Bank (South Africa) 5  银行
+Lloyds Bank 5 银行
+Hotmail 4 微软邮箱
+PNC Bank 4 银行
+Tesco 4  英国零售商
+Aetna Health Plans &amp; Dental Coverage 4 美国保险公司
+Mastercard 4 万事达卡 金融
+US Bank 4 银行
+Royal Bank of Canada 3 加拿大王室银行
+RuneScape 2 游戏公司
+AT&amp;T 2 通信公司
+Royal Bank of Scotland 2 苏格兰王室银行
+Orange 2 新闻类网站
+Discover Card 2 美国信用卡
+Blizzard 2 暴雪游戏
+Twitter 2 网络社交
+TAM Fidelidade 2 旅行网站（其他语种）
+LinkedIn 2 社交
+Allied Bank Limited 2 银行
+Cartasi 1 意大利金融（其他语种）
+Delta Air Lines 1 达美航空
+Nets 1 金融类
+Branch Banking and Trust Company 1 银行
+Key Bank 1 银行
+Bank of the West 1 银行
+Standard Bank Ltd. 1 银行
+ING Direct 1 荷兰金融
+Vodafone 0
+Volksbanken Raiffeisenbanken 0
+PKO Polish Bank 0
+Compass Bank 0
+Intesa Sanpaolo 0
+Skype 0
+Live 0
+British Telecom 0
+Centurylink 0
+World of Warcraft 0
+Citibank 0
+American Greetings 0
+Amarillio National Bank 0
+Metro Bank 0
+Nordea Bank 0
+ABSA Bank 0
+Suncorp 0
+ZML 0
+ABN AMRO Bank 0
+Development Bank of Singapore 0
+Halifax 0
+Discover Bank 0
+Rabobank 0
+Deutsche Bank 0
+Sky Financial 0

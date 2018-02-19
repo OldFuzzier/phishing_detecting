@@ -7,7 +7,7 @@ import MySQLdb
 class MyDB(object):
 
     def __init__(self):
-        self._config = dict(host='127.0.0.1', user='root', passwd='wt322426', db='phishingdb', charset='utf8')
+        self._config = dict(host='127.0.0.1', user='root', passwd='wt322426', db='url_db', charset='utf8')
 
     def my_select(self, *args):
         conn = MySQLdb.connect(**self._config)
@@ -17,7 +17,7 @@ class MyDB(object):
             data = cur.fetchone()
             return data
         except Exception, e:
-            print 'Error: %s' % e
+            print 'db select ERROR: %s' % e
         finally:
             cur.close()
             conn.close()
@@ -30,7 +30,7 @@ class MyDB(object):
             data_tuple = cur.fetchall()
             return data_tuple
         except Exception, e:
-            print 'Error: %s' % e
+            print 'db select ERROR: %s' % e
         finally:
             cur.close()
             conn.close()
@@ -42,7 +42,7 @@ class MyDB(object):
             cur.execute(sql, params_tup)
             conn.commit()
         except Exception, e:
-            print 'SQLError: %s' % e
+            print 'db execute ERROR: %s' % e
             conn.rollback()
         finally:
             cur.close()

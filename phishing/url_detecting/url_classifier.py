@@ -9,9 +9,9 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
 
-import urlfeature_util as ft
+from url_feature_util import SetFeature
 
-''' Test urls
+
 url1 = "http://www.luxinnerwear.com/javascript_gallery/alibaba/alibaba/login.alibaba.com.php?email=abuse@madecenter.com"
 url2 = "http://www.Confirme-paypal.com/"
 url3 = "http://www.mmch.co.in/font/index2.html?email=abuse@sfc-ksa.com"
@@ -25,7 +25,7 @@ url10 = "http://3designcenter.com/blog/wp-admin/network/other/index.html?.rand&a
 url11 = "http://shop.dominion.dn.ua/templates/redirect/smiles_motivo_para_sorrir_/?https://www.smiles.com.br/promocoes/redireciona/cadastrar/novapromocao/"
 url12 = 'https://logn.tabao.com/member/loin.jhtml?redirectURL=http%3A%2F%2Fbuy.tobao.com%2Fauction%2Fbuy_now.htm%3Fphone%3D13718868748%26tccdetailc%3Dwt_one_menu%26action%3Dbuynow%252FPhoneEcardBuyNowAction%26item_id_num%3D9559209412%26from%3Dtcc%26event_submit_do_buy%3D1'
 url13 = 'https://auth.alispay.com/logsin/'
-'''
+
 
 
 nbc_1 = Pipeline([
@@ -97,9 +97,11 @@ def test_KNN():
 def test():
     KNN_clf = test_KNN()
     for i in range(1, 14):
-        url_np = np.array(ft.set_feature(eval('url'+str(i))))
+        ft = SetFeature(eval('url'+str(i)))
+        url_np = np.array(ft.set_feature())
         print KNN_clf.predict(url_np)
-    print len(url_np)
+
+test()
 
 
 

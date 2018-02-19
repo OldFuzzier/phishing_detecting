@@ -38,6 +38,10 @@ def cut_words(part):
 
 # 结合cut_words方法将所有part进行整合以便tfidf算法可以直接接收
 def prepare_data(part_lst):
+    # data格式为:["word1 word2 word3",
+    #             "word4 word5 word6",
+    #             "word7 word8 word9"
+    #          ]
     data = []
     for part in part_lst:
         part_string = cut_words(part)

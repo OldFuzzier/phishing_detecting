@@ -30,9 +30,11 @@ features_lst = [
 
 class FeatureClassify(object):
 
-    def __init__(self):
+    def __init__(self, url):
         self.NORMAL_BRANDS = self.get_txt('phishing_brands.txt')
         self.SPECIAL_CHARACTER = ['confirm', 'account', 'banking', 'secure', 'ebayisapi', 'webscr', 'login', 'sigin']
+        self.url = url
+        self.url_structure = urlparse.urlparse(url)
 
     def get_txt(self, name):
         with open(name, 'rb') as f:
@@ -40,24 +42,19 @@ class FeatureClassify(object):
             brands_strip = map(lambda x: x.strip(), brands)
             return brands_strip
 
-    def split_url(self, url):
-        return urlparse.urlparse(url)
-    '''
-    The following are we need methods
-    '''
-    def get_url_domain_symbol_1(self, url):
-        url_piece = self.split_url(url)
+    '''The following are we need methods'''
+    def get_url_domain_symbol_1(self ):
+        # url_piece = self.split_url(url)
         symbol = '-'
-        domain_lst = list(url_piece.netloc)
+        domain_lst = list(self.url_structure.netloc)
         if symbol in domain_lst:
             return 1
         else:
             return 0
 
-    def get_url_query_symbol_2(self, url):
-        url_piece = self.split_url(url)
+    def get_url_query_symbol_2(self):
         symbols = ['@', '\?', '\.']
-        query = url_piece.query
+        query = self.url_structure.query
         reg = ''
         for i in symbols:
             reg += '|'+i
@@ -67,9 +64,8 @@ class FeatureClassify(object):
         else:
             return 0
 
-    def get_url_path_symbol_3(self, url):
-        url_piece = self.split_url(url)
-        path = url_piece.path
+    def get_url_path_symbol_3(self):
+        path = self.url_structure.path
         symbol1 = '//'
         symbol2 = '\.'
         pattern1 = re.compile(symbol1)
@@ -81,13 +77,13 @@ class FeatureClassify(object):
         else:
             return 0
 
-    def get_url_length(self, url):
+    def get_url_length(self):
         point = 85
-        point_paramter = 115
-        url_len = len(url)
-        url_piece = self.split_url(url)
+        point_parameter = 115
+        url_len = len(self.url)
+        url_piece = self.url_structure
         if url_piece.params != '':
-            if url_len >= point_paramter:
+            if url_len >= point_parameter:
                 return 1
             else:
                 return 0
@@ -97,79 +93,75 @@ class FeatureClassify(object):
             else:
                 return 0
 
-    def get_url_domain_length(self, url):
+    def get_url_domain_length(self):
         point = 39
-        url_piece = self.split_url(url)
-        if len(url_piece.netloc) >= point:
+        if len(self.url_structure.netloc) >= point:
             return 1
         else:
             return 0
 
-    def get_url_domain_level_length(self, url):
+    def get_url_domain_level_length(self):
         level = 4
-        url_piece = self.split_url(url)
-        if url_piece.netloc != '':
-            if len(url_piece.netloc.split('.')) >= level:
+        if self.url_structure.netloc != '':
+            if len(self.url_structure.netloc.split('.')) >= level:
                 return 1
             else:
                 return 0
         else:
             return 0
 
-    def get_url_path_level_length(self, url):
+    def get_url_path_level_length(self):
         level = 6
-        url_piece = self.split_url(url)
-        if url_piece.path != '' or url_piece.path != '/':
-            if len(url_piece.path.split('/'))-1 >= level:  # 因为该len包括了domain
+        if self.url_structure.path != '' or self.url_structure.path != '/':
+            if len(self.url_structure.path.split('/'))-1 >= level:  # 因为该len包括了domain
                 return 1
             else:
                 return 0
         else:
             return 0
 
-    def get_url_domain_is_ip_type(self, url):
-        url_piece = self.split_url(url)
-        if url_piece.netloc != '':
-            for piece in url_piece.netloc.split('.'):
+    def get_url_domain_is_ip_type(self):
+        if self.url_structure.netloc != '':
+            for piece in self.url_structure.netloc.split('.'):
                 if piece.isdigit():
                     return 1
             else:
                 return 0
         return 0
 
-    def get_url_domain_brand(self, url):
-        url_piece = self.split_url(url)
+    def get_url_domain_brand(self):
+        url_piece = self.url_structure
         for brand in self.NORMAL_BRANDS:
             if url_piece.netloc.find(brand) != -1:
                 return 1
         else:
             return 0
 
-    def get_url_path_brand(self, url):
-        url_piece = self.split_url(url)
+    def get_url_path_brand(self):
+        url_piece = self.url_structure
         for brand in self.NORMAL_BRANDS:
             if url_piece.path.find(brand) != -1:
                 return 1
         else:
             return 0
 
-    def get_url_top_domain_site_error(self, url):
+    def get_url_top_domain_site_error(self):
         pass
 
-    def get_domain_top_in_path(self, url):
+    def get_domain_top_in_path(self):
         pass
 
-    def get_tiny_domain(self, url):
-        url_piece = self.split_url(url)
+    def get_tiny_domain(self):
+        url_piece = self.url_structure
         point = 7
         if len(url_piece.netloc) <= point:
             return 1
         else:
             return 0
 
-    def get_special_character(self, url):
+    def get_special_character(self):
         for character in self.SPECIAL_CHARACTER:
-            if url.find(character) != -1:
+            if self.url.find(character) != -1:
                 return 1
         else:
             return 0
