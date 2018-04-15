@@ -1,0 +1,116 @@
+Other 31255
+Facebook 1401
+PayPal 1311
+Microsoft 561
+Google 376
+Dropbox 140
+Banco De Brasil 101
+AOL 84
+Yahoo 83
+eBay, Inc. 76
+Apple 74
+Amazon.com 71
+Santander UK 69
+Adobe 68
+JPMorgan Chase and Co. 60
+Itau 59
+Alibaba.com 53
+Bradesco 50
+Internal Revenue Service 45
+United Services Automobile Association 35
+Netflix 31
+DHL 30
+Bank of America Corporation 29
+ASB Bank Limited 24
+Cartasi 23
+Barclays Bank PLC 18
+Wells Fargo 17
+Blockchain 17
+Orange 17
+Allegro 16
+LinkedIn 16
+NatWest Bank 14
+Capitec Bank 14
+WhatsApp 13
+WalMart 11
+American Express 10
+Sulake Corporation 10
+RuneScape 9
+PNC Bank 9
+Capital One 9
+Steam 9
+Her Majesty's Revenue and Customs 9
+Cielo 9
+Hotmail 8
+Poste Italiane 7
+Mastercard 7
+ABSA Bank 7
+Vodafone 6
+HSBC Group 6
+National Australia Bank 6
+Australia and New Zealand Banking Group Limited 6
+US Bank 6
+Visa 6
+Allied Bank Limited 6
+ING Direct 6
+Royal Bank of Canada 5
+Accurint 4
+Twitter 4
+TD Canada Trust 3
+AT&amp;T 3
+Citibank 3
+Delta Air Lines 2
+Branch Banking and Trust Company 2
+Key Bank 2
+Metro Bank 2
+Lloyds Bank 2
+Orkut 2
+TSB 2
+TAM Fidelidade 2
+Development Bank of Singapore 2
+PKO Polish Bank 2
+Uber 2
+Standard Bank Ltd. 1
+Kiwibank 1
+Tesco 1
+Live 1
+Aetna Health Plans &amp; Dental Coverage 1
+First National Bank (South Africa) 1
+Centurylink 1
+CIMB Bank 1
+American Greetings 1
+GitHub 1
+Royal Bank of Scotland 1
+ArenaNet 1
+CareerBuilder 1
+BMO Financial 0
+Volksbanken Raiffeisenbanken 0
+Bitfinex 0
+Coinbase 0
+Compass Bank 0
+Nationwide Building Society 0
+Intesa Sanpaolo 0
+Nets 0
+Salem Five 0
+Salesforce 0
+British Telecom 0
+UniCredit 0
+Very 0
+Caixa 0
+Westpac 0
+Caixo 0
+Rackspace 0
+Groupon 0
+Deutsche Bank 0
+Nordea Bank 0
+Suncorp 0
+Wachovia 0
+ZML 0
+ABN AMRO Bank 0
+Alliance Bank 0
+Blizzard 0
+Halifax 0
+Commonwealth Bank of Australia 0
+EPPICard 0
+Sky Financial 0
+Smile Bank 0

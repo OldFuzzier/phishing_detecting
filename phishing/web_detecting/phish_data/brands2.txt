@@ -1,0 +1,100 @@
+Other 26938
+Facebook 1341
+PayPal 920
+Microsoft 457
+Google 450
+Dropbox 143
+Banco De Brasil 83
+Yahoo 76
+AOL 75
+Adobe 64
+Apple 54
+JPMorgan Chase and Co. 53
+Alibaba.com 50
+eBay, Inc. 47
+Santander UK 46
+Itau 42
+Bradesco 41
+Internal Revenue Service 38
+United Services Automobile Association 36
+Bank of America Corporation 29
+DHL 28
+Amazon.com 27
+ASB Bank Limited 21
+Cartasi 20
+Netflix 19
+Barclays Bank PLC 16
+Wells Fargo 15
+Allegro 15
+Capitec Bank 14
+Orange 13
+NatWest Bank 11
+LinkedIn 10
+Sulake Corporation 10
+American Express 9
+PNC Bank 9
+Steam 8
+Poste Italiane 8
+WhatsApp 8
+WalMart 8
+Cielo 8
+Hotmail 7
+Capital One 7
+Visa 6
+RuneScape 5
+National Australia Bank 5
+US Bank 5
+Royal Bank of Canada 5
+HSBC Group 4
+AT&amp;T 4
+Blockchain 4
+Aetna Health Plans &amp; Dental Coverage 4
+Mastercard 4
+Allied Bank Limited 4
+Vodafone 3
+Accurint 3
+Key Bank 3
+First National Bank (South Africa) 3
+Her Majesty's Revenue and Customs 3
+Branch Banking and Trust Company 2
+Citibank 2
+Metro Bank 2
+Orkut 2
+Twitter 2
+Development Bank of Singapore 2
+Kiwibank 1
+Tesco 1
+Live 1
+Australia and New Zealand Banking Group Limited 1
+Centurylink 1
+CIMB Bank 1
+Lloyds Bank 1
+ABSA Bank 1
+GitHub 1
+Royal Bank of Scotland 1
+Blizzard 1
+TAM Fidelidade 1
+Standard Bank Ltd. 1
+Uber 1
+Volksbanken Raiffeisenbanken 0
+Compass Bank 0
+Nationwide Building Society 0
+TD Canada Trust 0
+Delta Air Lines 0
+Nets 0
+Salem Five 0
+Caixa 0
+Caixo 0
+Rackspace 0
+Groupon 0
+Nordea Bank 0
+Suncorp 0
+TSB 0
+ABN AMRO Bank 0
+Halifax 0
+Discover Bank 0
+Deutsche Bank 0
+PKO Polish Bank 0
+ING Direct 0
+Sky Financial 0
+Smile Bank 0

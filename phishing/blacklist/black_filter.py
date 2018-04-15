@@ -1,6 +1,11 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+'''
+该模块主要是访问alexa接口进行网站排名检测
+
+'''
+
 import requests
 import re
 import time
@@ -14,7 +19,6 @@ def get_rank(search_url):
                'Accept-Language': 'zh-CN,zh;q=0.8',
                'Upgrade-Insecure-Requests': '1'
                }
-    proxy = {'http'}
     try:
         xml = requests.get(url, headers=headers).text
         return re.compile(r'<REACH RANK="\d+"/>').search(xml).group()
