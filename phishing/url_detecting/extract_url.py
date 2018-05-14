@@ -52,7 +52,7 @@ class ExtractURL(object):
         while True:
             try:
                 l = q.get()
-                with open('url_data/features.txt', 'ab') as f:
+                with open('url_data/features2.txt', 'ab') as f:
                     f.write(str(l)+'\n')
                 q.task_done()
             except ExtractURL, e:

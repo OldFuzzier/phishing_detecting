@@ -18,7 +18,7 @@ features_lst = [
     'get_url_domain_level_length',
     'get_url_path_level_length',
     'get_url_domain_is_ip_type',
-    'get_url_domain_brand',
+    # 'get_url_domain_brand',
     'get_url_path_brand',
     'get_url_top_domain_site_error(give up)',
     'get_domain_top_in_path(give up)',
@@ -130,13 +130,13 @@ class URLFeature(object):
                 return 0
         return 0
 
-    def get_url_domain_brand(self):
-        url_piece = self.url_structure
-        for brand in self.NORMAL_BRANDS:
-            if url_piece.netloc.find(brand) != -1:
-                return 1
-        else:
-            return 0
+    # def get_url_domain_brand(self):
+    #     url_piece = self.url_structure
+    #     for brand in self.NORMAL_BRANDS:
+    #         if url_piece.netloc.find(brand) != -1:
+    #             return 1
+    #     else:
+    #         return 0
 
     def get_url_path_brand(self):
         url_piece = self.url_structure
@@ -181,7 +181,7 @@ class SetFeature(URLFeature):
             self. get_url_domain_level_length,
             self.get_url_path_level_length,
             self.get_url_domain_is_ip_type,
-            self.get_url_domain_brand,
+            # self.get_url_domain_brand,
             self.get_url_path_brand,
             self.get_tiny_domain,
             self.get_special_character

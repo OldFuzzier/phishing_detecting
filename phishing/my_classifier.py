@@ -46,7 +46,7 @@ class MyClassier(MyProcess):
         if flag == 'url':
             # url数据使用过file获取的
             arr_lst = []  # 每个每个特征转化为array个时候都要添加到这个list中
-            with open('url_detecting/url_data/features.txt', 'rb') as f:
+            with open('url_detecting/url_data/features2.txt', 'rb') as f:
                 url_list = f.readlines()
             for url_string in url_list:
                 if len(url_string) > 1:  # 除去空的字符串
@@ -142,6 +142,6 @@ class MyClassier(MyProcess):
 
 
 if __name__ == '__main__':
-    obj = MyClassier().main_train_test('text', 'SVC', 'hahah')
-    obj = MyClassier().main_train_test('text', 'KNeighborsClassifier', 'haha')
-    obj = MyClassier().main_train_test('text', 'MultinomialNB', 'hahah')
+    obj = MyClassier().main_train_test('url', 'SVC', 'hahah')
+    obj = MyClassier().main_train_test('url', 'KNeighborsClassifier', 'haha')
+    obj = MyClassier().main_train_test('url', 'MultinomialNB', 'hahah')
